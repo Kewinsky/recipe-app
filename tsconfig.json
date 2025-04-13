@@ -1,27 +1,38 @@
 {
-  "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
+   "compilerOptions": {
+      "target": "ES2017",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "incremental": true,
+      "plugins": [
+         {
+            "name": "next"
+         }
+      ],
+      "paths": {
+         "@/api/*": ["./src/app/_api/*"],
+         "@/api": ["./src/app/_api"],
+         "@/components/*": ["./src/app/_components/*"],
+         "@/components": ["./src/app/_components"],
+         "@/const/*": ["./src/app/_const/*"],
+         "@/const": ["./src/app/_const"],
+         "@/styles/*": ["./src/app/_styles/*"],
+         "@/styles": ["./src/app/_styles"],
+         "@/helpers/*": ["./src/app/_helpers/*"],
+         "@/helpers": ["./src/app/_helpers"],
+         "@/types/*": ["./src/app/_types/*"],
+         "@/types": ["./src/app/_types"]
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+   },
+   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+   "exclude": ["node_modules"]
 }

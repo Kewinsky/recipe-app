@@ -1,0 +1,16 @@
+.scrollTop {
+   display: none;
+   position: fixed;
+   bottom: 12px;
+   right: 12px;
+   z-index: 1;
+   font-size: 20px;
+   border: none;
+   outline: none;
+   background-color: $primaryBlue;
+   color: #000;
+   cursor: pointer;
+   padding: 10px;
+   width: 50px;
+   border-radius: 100%;
+}
