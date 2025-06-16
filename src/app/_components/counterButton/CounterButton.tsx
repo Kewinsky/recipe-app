@@ -1,5 +1,6 @@
 import '../counterButton/counterButton.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
 import type { CounterButtonProps } from './types'
 
 const CounterButton = ({
@@ -10,11 +11,11 @@ const CounterButton = ({
    <span className="articleButton">
       {isNegative ? (
          <button onClick={() => counter && setCounter(counter - 1)}>
-            <FontAwesomeIcon icon="minus" />
+            <FontAwesomeIcon icon={faMinus} />
          </button>
       ) : (
          <button onClick={() => setCounter(counter + 1)}>
-            <FontAwesomeIcon icon="plus" />
+            <FontAwesomeIcon icon={faPlus} />
          </button>
       )}
    </span>

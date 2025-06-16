@@ -1,11 +1,15 @@
 'use client'
 
-import FilteringTab from '@/components/filteringBar'
 import ListOfRecipes from '@/components/listOfRecipes'
 import ScrollTop from '@/components/scrollTop'
 import { useState } from 'react'
 import type { RecipeItem } from '@/types'
 import type { RecipesFilters } from '@/api'
+import dynamic from 'next/dynamic'
+
+const FilteringTab = dynamic(() => import('@/components/filteringBar'), {
+   ssr: false,
+})
 
 const Finder = () => {
    const [filters, setFilters] = useState<RecipesFilters>({

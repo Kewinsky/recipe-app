@@ -4,7 +4,7 @@ import type { RecipesFilters, RecipesParams } from './types'
 
 export const getRecipes = async (number = 10, filters: RecipesFilters) => {
    const params: RecipesParams = {
-      apiKey: process.env.REACT_APP_API_KEY,
+      apiKey: process.env.NEXT_PUBLIC_API_KEY,
       addRecipeInformation: true,
       number: number,
    }
@@ -25,7 +25,7 @@ export const getRecipes = async (number = 10, filters: RecipesFilters) => {
    params.sort = filters?.sort ? filters.sort.value : ''
 
    return await axios
-      .get(`${process.env.REACT_APP_API_URL}/complexSearch`, {
+      .get(`${process.env.NEXT_PUBLIC_API_URL}/complexSearch`, {
          params: params,
       })
       .then((response) => {

@@ -1,6 +1,7 @@
 'use client'
 
 import '@/styles/pages/aboutUs.scss'
+
 import { useState, useMemo } from 'react'
 import ExampleText from '@/components/additional'
 import CounterButton from '@/components/counterButton'

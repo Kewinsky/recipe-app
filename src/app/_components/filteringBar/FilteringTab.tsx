@@ -1,4 +1,4 @@
-import '../filteringBar/filteringTab.scss'
+import './filteringTab.scss'
 import Select from 'react-select'
 import {
    CUISINE,

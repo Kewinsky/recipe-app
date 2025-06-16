@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 
+import 'bootstrap/dist/css/bootstrap.css'
 import { nunito, montserrat } from './fonts'
 import '@/styles/app.scss'
+
 import Navbar from '@/components/navigation'
 import Footer from '@/components/footer'
+import BootstrapClient from './_components/bootstrap'
 
 export const metadata: Metadata = {
    title: 'Recipe App',
@@ -21,6 +24,7 @@ export default function RootLayout({
             <Navbar />
             <main>{children}</main>
             <Footer />
+            <BootstrapClient />
          </body>
       </html>
    )
