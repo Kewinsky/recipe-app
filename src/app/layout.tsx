@@ -1,16 +1,13 @@
 import type { Metadata } from 'next'
 
-import 'bootstrap/dist/css/bootstrap.css'
 import { nunito, montserrat } from './fonts'
-import '@/styles/app.scss'
 
-import Navbar from '@/components/navigation'
-import Footer from '@/components/footer'
-import BootstrapClient from './_components/bootstrap'
+import ClientLoader from './_components/clientWrapper'
 
 export const metadata: Metadata = {
    title: 'Recipe App',
    description: 'Cook everything you want',
+   manifest: '/manifest.json',
 }
 
 export default function RootLayout({
@@ -21,10 +18,7 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body className={`${nunito.variable} ${montserrat.variable}`}>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
-            <BootstrapClient />
+            <ClientLoader>{children}</ClientLoader>
          </body>
       </html>
    )

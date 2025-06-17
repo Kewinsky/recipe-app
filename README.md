@@ -14,11 +14,11 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Info
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+.env.development is only in for development shape, if you need production build then make your own .env and generate your own keys from web-push CLI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [See In Next.js Docs](https://nextjs.org/docs/app/guides/progressive-web-apps)
 
 ## Learn More
 

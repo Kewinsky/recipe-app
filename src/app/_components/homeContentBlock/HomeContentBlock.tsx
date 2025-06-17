@@ -1,3 +1,5 @@
+'use client'
+
 import './homeContentBlock.scss'
 
 const HomeContentBlock = () => {

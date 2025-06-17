@@ -1,3 +1,5 @@
+'use client'
+
 import './carousel.scss'
 
 const Carousel = () => {
